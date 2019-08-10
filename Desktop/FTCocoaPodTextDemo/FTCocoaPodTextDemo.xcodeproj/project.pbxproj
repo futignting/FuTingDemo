@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBCCCCA50FD5D5EAAE8C0053 /* libPods-FTCocoaPodTextDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05963C7D5D8BFFED8EEE31FA /* libPods-FTCocoaPodTextDemo.a */; };
 		F2DE352422FE6C91009D3BAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DE352322FE6C91009D3BAA /* AppDelegate.m */; };
 		F2DE352722FE6C91009D3BAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DE352622FE6C91009D3BAA /* ViewController.m */; };
 		F2DE352A22FE6C91009D3BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DE352822FE6C91009D3BAA /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05963C7D5D8BFFED8EEE31FA /* libPods-FTCocoaPodTextDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTCocoaPodTextDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		976865BB3BE1AEB9C0D286E1 /* Pods-FTCocoaPodTextDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTCocoaPodTextDemo.debug.xcconfig"; path = "Target Support Files/Pods-FTCocoaPodTextDemo/Pods-FTCocoaPodTextDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B1B27D66F73B0FD88C810CC0 /* Pods-FTCocoaPodTextDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTCocoaPodTextDemo.release.xcconfig"; path = "Target Support Files/Pods-FTCocoaPodTextDemo/Pods-FTCocoaPodTextDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F2DE351F22FE6C91009D3BAA /* FTCocoaPodTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTCocoaPodTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DE352222FE6C91009D3BAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2DE352322FE6C91009D3BAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCCCCA50FD5D5EAAE8C0053 /* libPods-FTCocoaPodTextDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		336F7C12198DB3487B64C18F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05963C7D5D8BFFED8EEE31FA /* libPods-FTCocoaPodTextDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEEB21F81FE29529173F540F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				976865BB3BE1AEB9C0D286E1 /* Pods-FTCocoaPodTextDemo.debug.xcconfig */,
+				B1B27D66F73B0FD88C810CC0 /* Pods-FTCocoaPodTextDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F2DE351622FE6C91009D3BAA = {
 			isa = PBXGroup;
 			children = (
 				F2DE352122FE6C91009D3BAA /* FTCocoaPodTextDemo */,
 				F2DE352022FE6C91009D3BAA /* Products */,
+				DEEB21F81FE29529173F540F /* Pods */,
+				336F7C12198DB3487B64C18F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2DE353522FE6C91009D3BAA /* Build configuration list for PBXNativeTarget "FTCocoaPodTextDemo" */;
 			buildPhases = (
+				487B62B7EDB4E335E656F5F7 /* [CP] Check Pods Manifest.lock */,
 				F2DE351B22FE6C91009D3BAA /* Sources */,
 				F2DE351C22FE6C91009D3BAA /* Frameworks */,
 				F2DE351D22FE6C91009D3BAA /* Resources */,
+				949D6A9E9F430A1F5274E1C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		487B62B7EDB4E335E656F5F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FTCocoaPodTextDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		949D6A9E9F430A1F5274E1C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FTCocoaPodTextDemo/Pods-FTCocoaPodTextDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FTCocoaPodTextDemo/Pods-FTCocoaPodTextDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2DE351B22FE6C91009D3BAA /* Sources */ = {
@@ -283,6 +359,7 @@
 		};
 		F2DE353622FE6C91009D3BAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976865BB3BE1AEB9C0D286E1 /* Pods-FTCocoaPodTextDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +376,7 @@
 		};
 		F2DE353722FE6C91009D3BAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B27D66F73B0FD88C810CC0 /* Pods-FTCocoaPodTextDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
