@@ -6,4 +6,5 @@ pod 'SVProgressHUD'
 pod 'YYModel'
 pod 'DZNEmptyDataSet'
 pod 'YYCache'
+pod 'BlocksKit'
 end
