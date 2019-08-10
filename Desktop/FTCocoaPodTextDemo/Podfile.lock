@@ -17,6 +17,7 @@ PODS:
   - DZNEmptyDataSet (1.8.1)
   - IQKeyboardManager (6.4.0)
   - SVProgressHUD (2.2.5)
+  - YYCache (1.0.4)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - DZNEmptyDataSet
   - IQKeyboardManager
   - SVProgressHUD
+  - YYCache
   - YYModel
 
 SPEC REPOS:
@@ -32,6 +34,7 @@ SPEC REPOS:
     - DZNEmptyDataSet
     - IQKeyboardManager
     - SVProgressHUD
+    - YYCache
     - YYModel
 
 SPEC CHECKSUMS:
@@ -39,8 +42,9 @@ SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 301e4a0a9156855867cd2e0db8a73a8ed9f2a6e9
+PODFILE CHECKSUM: 302c2160962cb895f990c0491bf968ff68ade41c
 
 COCOAPODS: 1.6.1

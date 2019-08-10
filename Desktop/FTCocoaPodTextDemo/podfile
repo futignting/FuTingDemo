@@ -5,4 +5,5 @@ pod 'IQKeyboardManager'
 pod 'SVProgressHUD'
 pod 'YYModel'
 pod 'DZNEmptyDataSet'
+pod 'YYCache'
 end
